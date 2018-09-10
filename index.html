@@ -1,0 +1,85 @@
+<!Doctype html>
+<html>
+ <head>
+    <title>Products</title>
+      <link rel="stylesheet" type="text/css" href="index.css">
+ </head>
+ <body>
+     <div class="topnav">  
+      <a class="active" href="#home" onclick="MakeCarVisible()">CAR</a>
+      <a href="#Air" onclick="MakeAirVisible()">AIR</a>
+      <a href="#Activity" onclick="MakeActivityVisible()">ACTIVITY</a>
+      <a href="#Hotel" onclick="MakeHotelVisible()">HOTEL</a>
+     </div>
+     <div class="ActivityContainer">
+     Activityname:<br>
+         <input type="text" class="Activity"><br>
+     Location:<br>
+         <input type="text" class="Activity"><br>
+     FromDate:<br> 
+         <input type="date" class="Activity"><br>
+     ToDate:<br> 
+         <input type="date" class="Activity"><br>
+     price:<br>
+         <input type="text" class="Activity"><br>
+     Duration:<br>
+         <input type="text" class="Activity"><br>
+         <input type="submit" onclick="updateActivity()">
+   </div>
+     <div class="AirContainer">
+     Flightname:<br>
+         <input type="text" class="Air"><br>
+     Source:<br>
+         <input type="text" class="Air"><br>
+     Destination:<br> 
+         <input type="text" class="Air"><br>
+     DepartureDate:<br> 
+         <input type="date" class="Air"><br>
+     DepartureTime:<br> 
+         <input type="text" class="Air"><br>
+     ArrivalDate:<br>
+         <input type="date" class="Air"><br>
+     ArrivalTime:<br>
+         <input type="text" class="Air"><br>
+      price:<br>
+         <input type="text" class="Air"><br>
+         <input type="submit" onclick="updateAir()">
+   </div>
+     <div class="HotelContainer">
+     Hotelname:<br>
+         <input type="text" class="Hotel"><br>
+     Location:<br>
+         <input type="text" class="Hotel"><br>
+     CheckInDate:<br> 
+         <input type="date" class="Hotel"><br>
+     CheckOutDate:<br> 
+         <input type="date" class="Hotel"><br>
+     price:<br>
+         <input type="text" class="Hotel"><br>
+         <input type="submit" onclick="updateHotel()">
+   </div>
+     <div class="CarContainer">
+     Carname:<br>
+         <input type="text" class="Car"><br>
+     CarModel:<br>
+         <input type="text" class="Car"><br>
+     Source:<br> 
+         <input type="text" class="Car"><br>
+     Destination:<br> 
+         <input type="text" class="Car"><br>
+     FromDate:<br> 
+         <input type="date" class="Car"><br>
+     ToDate:<br> 
+         <input type="date" class="Car"><br>
+     Price:<br>
+         <input type="text" class="Car"><br>
+         <input type="submit" onclick="updateCar()">
+   </div>
+     <div id="root"></div>
+     <script src="script.js"></script>
+ </body>
+</html>
+       <!--  <input type="button"  value="Car" onclick="GetAvailableCars()">
+     <input type="button"  value="Air" onclick="GetAvailableFlights()">
+     <input type="button"  value="Activity" onclick="GetAvailableActivity()">
+     <input type="button"  value="Hotel" onclick="GetAvailableHotel()">--!>   
